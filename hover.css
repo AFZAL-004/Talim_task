@@ -1,0 +1,122 @@
+/* Basic navigation setup */
+nav {
+    background-color: black;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  nav .logo-img {
+    max-width: 120px; /* Adjust the logo size */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for logo */
+  nav .logo-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* Navigation menu links */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #f7d953; /* Yellow underline */
+    transition: width 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f7d953; /* Yellow color on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%; /* Full width underline on hover */
+  }
+  
+  /* Button styles */
+  .header button {
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+  }
+  
+  /* Subscribe button (head-sub class) */
+  nav .head-sub {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  nav .head-sub:hover {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7); /* Soft glow */
+    transform: translateY(-2px); /* Lift slightly on hover */
+  }
+  .purple span{
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 1)) /* Inner, thicker glow */
+            drop-shadow(0 0 10px rgba(255, 215, 0, 0.8)) /* Outer, softer glow */;
+  }
+  .purple{
+    transition: all 0.3s ease;
+  }
+  .purple:hover {
+    background-color: black; /* Background changes to black */
+    color: white; /* Text changes to white */
+    border: 2px solid yellow; /* Yellow border */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.8); /* Glow effect around border */
+  }  
+  .yellow{
+    transition: all 0.3s ease;
+  }
+  .yellow:hover {
+    border: 2px solid yellow; /* Add yellow border */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); /* Subtle yellow glow */
+    
+  }
+  
+  /* Log in button */
+  nav .log-in {
+    border-color: white;
+    color: white;
+    background-color: black;
+  }
+  
+  nav .log-in:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+  }
+  

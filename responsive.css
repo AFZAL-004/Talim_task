@@ -1,0 +1,188 @@
+/* Base Styles for Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* background-color: #ffffff; */
+  flex-wrap: wrap; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  flex: 1;
+ 
+  text-align: left;
+}
+
+nav .logo-img {
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav div {
+  display: flex;
+  gap: 1rem;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 649px) {
+  
+
+  nav .logo {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+
+  nav ul {
+    display: none; /* Hides the navigation menu */
+  }
+  nav .logo-img {
+    padding-left: 10px; /* Adjust logo padding for mobile */
+  }
+
+  nav div {
+    display: flex;
+    gap: 10px; /* Adjust spacing between the buttons */
+  }
+
+  .carousel-slides .slide {
+    width: 600px; /* Adjust the image width */
+    height: auto;
+  }
+  header h1 {
+    width: 100%;
+  }
+  .header-content1 {
+    justify-content:center;
+    width: 100%;
+  }
+  
+  .header-content1 .review-text{
+    font-size: large;
+  }
+  .header-content1 .talim{
+    font-size: small;
+  }
+  .profile-img {
+    width: 60px; /* Size of the profile picture */
+  }
+  
+  .header-content1 {
+    display: flex;
+    justify-content: space-between; /* Even space between elements */
+  }
+  
+  .hc1 {
+    flex-grow: 1; /* Allow the hc1 section to grow to fill available space */
+    display: flex;
+    align-items: center;
+    margin-right: 0; /* Remove margin to ensure no extra space */
+    max-width: 80%; /* Adjust width to prevent overflow */
+  }
+  
+  .cta {
+    flex-grow: 1; /* Allow the .cta to expand to fill available space */
+    width: 100%; /* Full width */
+    margin-top: 2rem; /* Adjust margin as necessary */
+  }
+  
+  .cta p {
+    font-size: x-large;
+    text-align: justify; /* Left-align text */
+  }
+  
+  
+}
+
+@media (max-width: 649px) {
+  .cta-row {
+    display: flex;
+    flex-direction: column; /* Align boxes vertically */
+    justify-content: center;
+    align-items: center; /* Center the boxes */
+    gap: 20px; /* Space between the boxes */
+    width: 100%; /* Ensures the rows fill the width */
+  }
+  
+  .cta-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    text-align: center; /* Center the text */
+    max-width: 500px;
+    max-height: 400px;
+    width: 500px;
+    height: 500px;
+  }
+
+  .cta-item h3{
+    font-size: 70px;
+  }
+
+  .cta-item img{
+    max-width: 400px;
+  }
+  
+  .cta-unlimited {
+    width: 500px;  /* Adjust the width */
+    height: 300px; /* Adjust the height */
+    background-size: cover;
+  }
+
+  .subscribe {
+    width: 100%;           /* Adjust the width of the subscribe section */
+    padding: 20px; 
+    transition: all 0.3s ease;       /* Add padding to create space around the image */
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+  
+}
+
+
+
+
+@media (max-width: 933px) {
+  .cta{
+    width: 70%;
+  }
+}

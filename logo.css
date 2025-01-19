@@ -1,0 +1,63 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000; /* Black background to match your site */
+  color: #fff; /* Adjust text color accordingly */
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Sponsor Logo Section */
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: black; /* Match the section background to your website */
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), black); /* Fade into black */
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), black); /* Fade into black */
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused; /* Pause on hover */
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 40px; 
+}

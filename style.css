@@ -1,0 +1,565 @@
+  
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    html, body {
+      overflow-y: scroll; /* Enables scrolling but hides the scrollbar */
+      scrollbar-width: none; /* Firefox */
+    }
+    
+    html::-webkit-scrollbar {
+      display: none; /* Chrome, Safari, and Edge */
+    }          
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: black;
+      color: white;
+      overflow-x: hidden;
+      font-family: 'Inter', sans-serif;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between; /* Keeps the logo on the left and navigation items on the right */
+      align-items: center;
+      padding: 20px;
+      background-color: #000;
+      width: 100%;
+      position: relative;
+    }
+    
+    nav .logo-img {
+      padding-left: 20px;
+      padding-top: 8px;
+      width: 60px;
+      height: auto;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px; /* Adds equal space between each menu item */
+      margin-left: auto; /* Ensures the ul is pushed to the right */
+    }
+    
+    nav ul li {
+      margin-left: 20px;
+    }
+    
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+    
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 80%;
+      bottom: -5px;
+      left: 10%;
+      height: 3px;
+      background-color: #FFD700; 
+      transition: all 0.3s ease;
+    }
+    
+    nav ul li a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+    
+    .header button {
+      background-color: #FFD700;
+      border: none;
+      padding: 10px 20px;
+      color: #000;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+    
+    nav::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50px;
+      right: 50px;
+      height: 1px;
+      background-color:#ffffff8c; /* Underline color */
+    }
+        
+    
+    header {
+      display: flex;
+      align-items: flex-start;
+      color: white;
+      padding: 0 50px; /* Adds padding on both sides */
+    }
+    
+    .header-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    header h1 {
+      width: 70%;
+      margin-top: 2rem;
+      font-size: calc(3rem + 2vw);
+      font-weight:bold;
+    }
+   
+    header h1 span {
+      color: #FFD700;
+    }
+    
+    .header-content1 {
+      display: flex; /* Aligns profile image and review text side by side */
+      /* align-items: center; */
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 20px;
+      width: 100%;
+    }
+    .header-content1 .hc1{
+      display: flex;
+      align-items: center;
+    }
+    
+    .profile-img {
+      width: 80px; /* Size of the profile picture */
+      height: auto; /* Size of the profile picture */
+      border-radius: 50%; /* Makes the image round */
+      margin-right: 20px; /* Adds space between image and review text */
+    }
+    
+    .review-text {
+      font-size: 25px;
+      font-family: 'Arial', sans-serif; /* Better font style for reviews */
+      font-weight: 300; /* Lighter weight for better readability */
+      color: #f5f5f5; /* Lighter color for the text */
+      max-width: 500px; /* Limits the length of the text */
+    }
+    
+    .talim {
+      font-size: 16px; /* Smaller font size */
+      font-weight: 200; /* Thinner font weight */
+      color: #ddd; /* Lighter color for distinction */
+      margin-top: 10px; /* Space between the review and the name */
+    }
+    
+    .cta {
+      display: flex;
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: flex-end;
+      /* padding-top: 25%; */
+      margin-top: 5rem;
+      width: 40%;
+    }
+
+    .cta p{
+      font-size:xx-large;
+    }
+    
+    .cta button {
+      margin: 10px;
+      padding: 15px 30px;
+      font-size:x-large;
+      border-radius: 30px;
+    }
+    
+    .cta .yellow {
+      background-color: #FFD700;
+      color: #000;
+    }
+    
+    .cta .purple {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .profile-content{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    
+    .client-logos {
+      padding: 50px;
+      text-align: center;
+      background-color: black;
+    }
+    .client-logos img {
+      width: 100px;
+      margin: 20px;
+    }
+    .product-highlight {
+      padding: 50px;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .product-highlight img {
+      width: 400px;
+    }
+    .product-highlight .text-block {
+      max-width: 500px;
+    }
+    .cta-grid {
+      padding: 30px;  /* Added more padding around the grid */
+      display: flex;
+      flex-direction: column;
+      gap: 30px;  /* Spacing between rows */
+      align-items: center;  /* Center content horizontally */
+      background-color: #000;
+    }
+    
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;  /* Ensure the rows fill the width */
+      max-width: 1200px;  /* Optional: limit the max width of the content */
+    }
+
+    .cta-bento2{
+      width: 700px;
+    }
+    .cta-bento3{
+      width: 350px;
+    }
+    .cta-bento4{
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 80%;
+    }
+    
+    .cta-item {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+      flex: 1;  /* Allow boxes to grow equally */
+      max-width: 380px;  /* Limit the size of each box */
+    }
+    .cta-48h{
+      background-image: url('./Images/background/black2.avif');
+    }
+    .cta-unlimited {
+      flex: 0 0 775px;
+      max-width: 800px;
+      background-image: url('./Images/background/black3.avif');
+      background-size: 200% 100%; /* Double the width */
+      background-position: right calc(100% - 800px); /* Calculate the correct offset */
+    }
+    .cta-invoice {
+      flex: 0 0 775px; /* This will set the width of the 'Unlimited' box to 500px */
+      max-width: 800px;
+      background-image: url('./Images/background/black5.jpeg');
+      background-size: cover;
+    }
+    .cta-pause{
+      background-image: url('./Images/background/black2.avif');
+    }
+    .cta-connect{
+      background-image: url('./Images/background/black5.jpeg');
+      background-size:cover;
+    }
+    .cta-product{
+      background-image: url('./Images/background/black3.avif');
+      background-size:cover;
+    }
+    .cta-quality{
+      background-image: url('./Images/background/black5.jpeg');
+      background-size:cover;
+    }
+    
+    .cta-item:hover {
+      transform: scale(1.05);
+    }
+    
+    .cta-item h3 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #FFD700; /* Yellow color */
+    }
+    
+    .cta-item p {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 100;
+      color:#dddddd6c;
+      max-width: 300px;
+    }
+    
+    .cta-48h h1 {
+      font-size: 9rem;
+      text-align: center;
+      color: yellow;
+    }
+    
+    
+    
+    .cta-unlimited h3 {
+      font-size: 2.8rem;
+    }
+    
+    .cta-invoice h3 {
+      font-size: 2.6rem;
+    }
+    
+    .cta-pause h3 {
+      font-size: 2.4rem;
+    }
+    
+    .cta-product h3 {
+      font-size: 2.5rem;
+    }
+    
+    .cta-quality h3 {
+      font-size: 2.6rem;
+    }
+    
+    .cta-chat h3 {
+      font-size: 2.5rem;
+    }
+   
+/* Carousel Container */
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden; /* Hide the horizontal scrollbar */
+  /* padding-left: 15%; */
+}
+
+/* Carousel slides */
+.carousel-slides {
+  display: flex;
+  overflow-x: scroll; /* Allow horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  gap: 20px;
+  cursor: pointer;
+  -ms-overflow-style: none; /* For Internet Explorer */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.carousel-slides::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.carousel-slides .slide {
+  flex-shrink: 0; /* Prevent the images from shrinking */
+  width: 800px; /* Adjust the image width */
+  height: auto;
+}
+
+.carousel-slides img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+  border: none; /* Remove any border on images */
+}
+
+/* Left and Right buttons */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  background: rgba(0, 0, 0, 0.3); /* Transparent background */
+  border: none; /* Remove border */
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  display: block; /* Make the button visible */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: rgba(0, 0, 0, 0.6); /* Slightly darker when hovered */
+}
+
+.prev-btn {
+  right: 50px; /* Position the left button */
+ 
+}
+
+.next-btn {
+  right: 10px; /* Position the right button */
+}
+
+/* Curved Box Styles */
+.curved-box {
+  background-color: #1f1f1f; /* Dark gray box */
+  padding: 40px;
+  border-radius: 25px; /* Curved edges */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  margin: auto; /* Center the box horizontally */
+  width: 80%; /* Control the width to reduce excessive space */
+  max-width: 1200px; /* Maximum width to ensure readability */
+  text-align: center;
+  /* height: 75vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-image: url('./Images/background/back.jpg');
+  background-size: cover;
+}
+
+.curved-box p {
+  color: #ffffff; /* White text inside the box */
+  font-size: 30px;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Add space between paragraphs */
+  max-width: 500px; /* Limit text width for better readability */
+  text-align:start; /* Ensure the text is aligned centrally */
+}
+
+.curved-box .highlight {
+  color: #f7ca18; /* Yellow for "Welcome to Artone" */
+  font-weight: bold;
+  font-size: xx-large;
+  margin-top: 20px;
+  text-align: center; /* Ensure the highlight is centered */
+  max-width: 800px;
+}
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: #000;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.design-steps{
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.design-steps .f1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: xx-large;
+  margin: 0px;
+}
+
+.design-steps .yellow1 {
+  color: yellow;
+  font-size: xx-large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5%;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.step-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f7ca18;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+
+.step-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.subscribe {
+  width: 40%;           /* Adjust the width of the subscribe section */
+  padding: 20px; 
+  transition: all 0.3s ease;       /* Add padding to create space around the image */
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.subscribe:hover{
+  transform: scale(1.05);
+}
+
+.sub {
+  width: 100%;          /* Make the image responsive within the subscribe container */
+  max-width: 600px;     /* Set a maximum width for the image */
+  border-radius: 15px;
+}
+
+/* Add transition to all elements that should appear on scroll */
+.fade-in {
+  opacity: 0; /* Start as invisible */
+  transform: translateY(50px); /* Initially positioned below */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Class that will be added when the element comes into view */
+.fade-in.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Position the element at its final place */
+}
+
+/* Optional: If you want a smooth fade-up animation, you can define this */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.log-in {
+  
+  border: 2px solid white; /* Set the border width, style, and color */
+  color: white;            /* Change the text color to white */
+  background-color: black; /* Change the background color to black */
+}
+
+
+
+
+
+
+
+
