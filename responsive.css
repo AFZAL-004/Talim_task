@@ -78,7 +78,7 @@ nav button:hover {
   }
 
   .carousel-slides .slide {
-    width: 600px; /* Adjust the image width */
+    width: 400px; /* Adjust the image width */
     height: auto;
   }
   header h1 {
@@ -122,8 +122,15 @@ nav button:hover {
     font-size: x-large;
     text-align: justify; /* Left-align text */
   }
-  
-  
+
+  .cta button {
+    margin-top: 5px;
+    font-size:13px;
+    border-radius: 30px;
+  }
+  .curved-box p{
+    font-size: larger;
+  }
 }
 
 @media (max-width: 649px) {
@@ -148,7 +155,7 @@ nav button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
     text-align: center; /* Center the text */
-    max-width: 500px;
+    max-width: 320px;
     max-height: 400px;
     width: 500px;
     height: 500px;
@@ -159,7 +166,7 @@ nav button:hover {
   }
 
   .cta-item img{
-    max-width: 400px;
+    max-width: 300px;
   }
   
   .cta-unlimited {
